@@ -50,13 +50,13 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      href: "https://github.com/yourusername",
+      href: "https://www.instagram.com/yourprofile",
       icon: <Github className="w-6 h-6" />,
       label: "GitHub Profile",
       gradient: "from-gray-700 to-gray-900"
     },
     {
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/sahan-kavishka-62652a288",
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn Profile",
       gradient: "from-blue-600 to-blue-800"

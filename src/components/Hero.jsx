@@ -1,5 +1,6 @@
 import React from "react";
-import img from '../assets/homeImg.png'
+import img from '../assets/homeImg.png';
+import CV from '../assets/Sahan Kavishka-CV.pdf';
 import { Instagram, Github, Linkedin, Download, ArrowRight } from 'lucide-react';
 
 const Hero = () => {
@@ -8,25 +9,21 @@ const Hero = () => {
       href: "https://www.instagram.com/yourprofile",
       icon: <Instagram className="w-6 h-6" />,
       label: "Instagram Profile",
-      hoverColor: "hover:text-pink-300"
+      hoverColor: "hover:text-pink-300",
     },
     {
-      href: "https://github.com/yourprofile",
+      href: "https://github.com/IT22233530",
       icon: <Github className="w-6 h-6" />,
       label: "GitHub Profile",
-      hoverColor: "hover:text-gray-300"
+      hoverColor: "hover:text-gray-300",
     },
     {
-      href: "https://www.linkedin.com/in/yourprofile",
+      href: "https://www.linkedin.com/in/sahan-kavishka-62652a288",
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn Profile",
-      hoverColor: "hover:text-blue-300"
-    }
+      hoverColor: "hover:text-blue-300",
+    },
   ];
-
-  const handleDownloadCV = () => {
-    window.open("/path-to-your-cv.pdf", "_blank");
-  };
 
   const handleViewWork = () => {
     const projectsSection = document.getElementById('projects');
@@ -60,7 +57,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-blue-100">
-            Aspiring Software Engineer | Web Developer
+            Software Engineer | Web Developer
           </p>
         </div>
 
@@ -78,9 +75,10 @@ const Hero = () => {
             View My Work
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
-          
-          <button
-            onClick={handleDownloadCV}
+
+          <a
+            href={CV}
+            download="Sahan-Kavishka-CV.pdf"
             className="group px-6 py-3 bg-indigo-700 text-white font-semibold 
               rounded-lg shadow-lg hover:bg-indigo-800 transform hover:scale-105 
               transition-all duration-300 flex items-center gap-2
@@ -90,7 +88,7 @@ const Hero = () => {
           >
             <Download className="w-4 h-4 group-hover:translate-y-0.5 transition-transform" />
             Download CV
-          </button>
+          </a>
         </div>
 
         <div className="flex justify-center md:justify-start gap-6 pt-4">
